@@ -9,14 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>client</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.github.vladdow</groupId>
-            <artifactId>dto</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
+    <artifactId>dto</artifactId>
 
 </project>

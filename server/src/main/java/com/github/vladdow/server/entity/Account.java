@@ -11,6 +11,7 @@ import lombok.*;
 @Data
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Accounts")
 public class Account {
 

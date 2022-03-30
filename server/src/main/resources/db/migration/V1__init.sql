@@ -13,5 +13,6 @@ CREATE TABLE Accounts (
 CREATE TABLE Cards (
     id BIGINT NOT NULL PRIMARY KEY,
     number DECIMAL(16, 0),
+    pin INTEGER,
     account_id BIGINT NOT NULL REFERENCES Accounts (id)
 );

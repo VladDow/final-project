@@ -23,9 +23,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .httpBasic()
                 .and()
+                .csrf()
+                    .ignoringAntMatchers("/h2-console/**")
+                .and()
+                .headers()
+                    .frameOptions().disable()
+                .and()
                 .authorizeRequests()
                     .antMatchers("/server/**")
-                    .authenticated();
+                    .authenticated()
+                .and()
+                .cors()
+                    .disable();
     }
 
 }
